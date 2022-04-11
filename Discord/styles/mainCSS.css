@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+body {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #4d4d4d;
+}
+
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    color: #aaaaaa;
+}
+nav{
+    width:auto;
+    height:40px;
+    background-color: #3d3838;
+    margin:8px 8px 8px 184px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px #3d3838;
+}
+.angleBracket{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:40px;
+    height:40px;
+    background-color: #3d3838;
+    margin:8px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px #3d3838;
+    cursor: pointer;
+    z-index: 9;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#a{
+    margin: 0 auto;
+    display: block;
+}
+.angleBracket svg{
+    transform: rotate(90deg) scale(1);
+    transition: 0.5s;
+}
+
+.angleBracketHover{
+    height:0px;
+    width:40px;
+    background-color: #3d383890;
+    z-index: 1;
+    position: relative;
+    top:-5px;
+    left:0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: 1s;
+}
+.angleBracket:hover .angleBracketHover{
+    height:200px;
+}
+.angleBracket:hover svg{
+    transform: scale(1.2) rotate(90deg);
+    fill: #aaaaaa;
+
+}
+
+
+.name{margin: auto; padding: 10px;}
+
+
+@media (max-width: 360px){
+    body {
+        display: none;
+    }
+    html::before{
+        content:"This is embarassing...";
+    }
+    html::after{
+        content:"The dimensions on this device is too small for this site to work";
+    }
+}
+
+
+
+
+.mainBody{
+    position: relative;
+    height:550px;
+    width: 750px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+}
+
+
+html, body {
+    margin:0px;
+    height:100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+svg{
+    fill: #919191;
+}
+
+
+
+
+
+
+
+code {
+    font-family: 'Source Code Pro';
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    display: flex;
+    overflow:hidden;
+}
+
+
+
+button{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 6px;
+    color: #4d4d4d;
+    font-weight:900;
+    position:relative;
+}
+
+#activeNowGrid{
+    display: none;
+}
+
+
+
+  
+  .tooltip::after {
+    background-color: #3d3838;
+    border-radius:8px;
+    color: #aaaaaa;
+    display: none;
+    padding: 10px 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width:100%;
+  }
+  
+  .tooltip::before {
+    background-color: #3d3838;
+    content: ' ';
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+  }
+  
+  .tooltip:hover::after {
+    display: block;
+  }
+  
+  .tooltip:hover::before {
+    display: block;
+  }
+  .tooltip.right::after {
+    content: 'Click Here for the Import';
+    top: 0;
+    right: 0;
+    transform: translateX(calc(100% + 10px));
+  }
+  
+  .tooltip.right::before {
+    top: 90%;
+    right: 0;
+    transform: translate(calc(100% + 5px), -50%) rotate(45deg);
+  }
+  
+
+
+.notice{
+    font-size: 40px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    line-height: 500px;
+}
+*{
+    user-select: none;
+}
